@@ -1,0 +1,29 @@
+{
+  "name": "horizontalcharts_ESM",
+  "version": "1.0.0",
+  "author": "Andrea Giovanni Bianchessi <andrea.g.bianchessi@gmail.com> (https://www.horizontalcharts.org)",
+  "description": "Horizontal Charts: horizontal JavaScript bar charts",
+  "module": "horizontalcharts.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agbianchessi/HorizontalCharts_ESM.git"
+  },
+  "keywords": [
+    "charts",
+    "charting",
+    "horizontal",
+    "horizontal charts",
+    "realtime",
+    "bar",
+    "bar charts"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agbianchessi/HorizontalCharts_ESM/issues"
+  },
+  "homepage": "https://www.horizontalcharts.org"
+}
