@@ -1,4 +1,9 @@
-import { merge } from './Utils.js';
+/** 
+ * @module TimeSeries
+ * @memberof module:horizontalcharts
+ */
+
+ import { merge } from './Utils.js';
 
 export default class TimeSeries {
 
@@ -8,9 +13,8 @@ export default class TimeSeries {
     * @constructor
     * @param {number} position - Unique, integer and strictly positive value, it sorts series on the graph from top to bottom.
     * @param {DefaultTimeSeriesOptions} [options] - <code>TimeSeries</code> options.
-    * @memberof module:HorizontalCharts
     */
-    constructor(position, options) {
+    constructor(position, options={}) {
         this.position = position;
         this.options = merge({}, TimeSeries.defaultTimeSeriesOptions, options);
         this.clear();

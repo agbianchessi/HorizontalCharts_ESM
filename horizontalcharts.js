@@ -5,7 +5,10 @@
  * @license MIT
  * @version 1.0.0
  *
- * @module HorizontalCharts
+ * @module horizontalcharts
+ * @see module:DataSample
+ * @see module:TimeSeries
+ * @see module:Utils
  */
 
 import { merge, resizeCanvas } from './Utils.js';
@@ -21,7 +24,6 @@ export class HorizontalChart {
      * @constructor
      * @param {DefaultChartOptions} [options] - <code>HorizontalChart</code> options.
      * @param {boolean} [isRealTime=false] - Enables the real-time data visualization mode.
-     * @memberof module:HorizontalCharts
      */
     constructor(options, isRealTime = false) {
         this.seriesSet = [];
