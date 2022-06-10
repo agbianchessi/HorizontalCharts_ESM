@@ -3,7 +3,7 @@
  * @copyright Andrea Giovanni Bianchessi 2022
  * @author Andrea Giovanni Bianchessi <andrea.g.bianchessi@gmail.com>
  * @license MIT
- * @version 1.0.0
+ * @version 1.0.1
  *
  * @module horizontalcharts
  * @see module:DataSample
@@ -319,10 +319,13 @@ export class HorizontalChart {
         // bar
         ctx.save();
         let bar = new Path2D();
-        ctx.translate(xStart, y); // Aligns the bar starting point to the pattern starting point
-        bar.rect(0, 0, xEnd - xStart, tsOptions.barHeight);
-        ctx.fillStyle = dataSample.color;
-        ctx.fill(bar);
+        ctx.translate(Math.round(xStart), Math.round(y)); // Aligns the bar starting point to the pattern starting point
+		bar.rect(0, 0, Math.round(xEnd) - Math.round(xStart), Math.round(tsOptions.barHeight));
+		ctx.fillStyle = dataSample.color;
+		ctx.lineWidth = dataSample.borderWidth > 0 ? dataSample.borderWidth : 1;
+		ctx.strokeStyle = dataSample.borderWidth > 0 ? dataSample.borderColor : dataSample.color;
+		ctx.fill(bar);
+		ctx.stroke(bar);
         dataSample.path2D = bar;
         ctx.restore();
         // Print value

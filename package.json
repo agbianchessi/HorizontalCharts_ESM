@@ -1,6 +1,6 @@
 {
   "name": "horizontalcharts_esm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Andrea Giovanni Bianchessi <andrea.g.bianchessi@gmail.com> (https://www.horizontalcharts.org)",
   "description": "Horizontal Charts: horizontal JavaScript bar charts",
   "module": "horizontalcharts.js",
