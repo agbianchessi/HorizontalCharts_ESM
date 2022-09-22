@@ -15,7 +15,7 @@ export function merge(target, ...objs) {
     target = target ?? {};
     for (let i = 0; i < objs.length; i++) {
         for (let key in objs[i]) {
-            if (objs[i].hasOwnProperty(key)) {
+            if (Object.hasOwn(objs[i], key)) {
                 if (typeof (objs[i][key]) === 'object') {
                     if (objs[i][key] instanceof Array) {
                         target[key] = objs[i][key].slice(); //shallow copy
